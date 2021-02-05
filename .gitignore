@@ -1,0 +1,5 @@
+.antigen/bundles
+.antigen/.resources
+.antigen/.zcompdump*
+.antigen/debug.log
+.antigen/init.zsh*

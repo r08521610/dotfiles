@@ -6,10 +6,13 @@ antigen use oh-my-zsh
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
 antigen bundle pip
+antigen bundle pipenv
 antigen bundle pyenv
+antigen bundle darvid/zsh-poetry
 antigen bundle autojump
+antigen bundle brew
 antigen bundle history-substring-search
-# antigen bundle thefuck
+antigen bundle thefuck
 antigen bundle command-not-found
 
 antigen bundle zsh-users/zsh-autosuggestions
@@ -23,4 +26,6 @@ antigen bundle zsh-users/zsh-completions
 antigen apply
 
 source ~/.antigen/config.zsh
+# source ~/.antigen/config_kubeflow.zsh
 source ~/.antigen/my_functions.zsh
+

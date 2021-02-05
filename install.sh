@@ -2,7 +2,7 @@
 curl -L git.io/antigen > antigen.zsh
 antigen_dir=/usr/local/share/antigen
 if ! [ -d "$antigen_dir" ]; then
-  mkdir "$antigen_dir"
+  mkdir -p "$antigen_dir"
 fi
 mv antigen.zsh $antigen_dir
 if ! [ -x "$(command -v antigen)" ]; then
@@ -28,4 +28,12 @@ zsh
 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+mkdir -p $HOME/.local/share/nvim/plugged
 
+# neovim
+nvim_config_path=$HOME/.config/nvim 
+mkdir -p $nvim_config_path
+mv init.vim general.vim $nvim_config_path
+
+# n
+curl -L https://git.io/n-install | bash

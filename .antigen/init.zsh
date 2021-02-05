@@ -1,5 +1,9 @@
 #-- START ZCACHE GENERATED FILE
+<<<<<<< HEAD
 #-- GENERATED: Sun Jul 12 14:08:39 CST 2020
+=======
+#-- GENERATED: Wed Jan  6 20:46:46 CST 2021
+>>>>>>> 79a46fb... update @ 20210205
 #-- ANTIGEN v2.2.3
 _antigen () {
 	local -a _1st_arguments
